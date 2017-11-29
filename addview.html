@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body onload="openWin()">
+<script>
+    $blog=prompt("blog url");
+function openWin() {
+    myWindow = window.open($blog, "myWindow", "width=900,height=500");
+    myWindo = window.open($blog, "myWindo", "width=800,height=450");
+    myWind = window.open($blog, "myWind", "width=700,height=400");
+    myWin = window.open($blog, "myWin", "width=600,height=350");
+    myWi = window.open($blog, "myWi", "width=500,height=300");
+    myW = window.open($blog, "myW", "width=400,height=250");
+    my = window.open($blog, "my", "width=100,height=100");
+    m = window.open($blog, "m", "width=10,height=10");
+    setTimeout(closeWin, 50000);
+}
+
+function closeWin() {
+    myWindow.close();
+    myWindo.close();
+    myWind.close();
+    myWin.close();
+    myWi.close();
+    myW.close();
+    my.close();
+    m.close();
+    setTimeout(openWin, 80);
+}
+function virus(){
+    window.open('https://nazeliterpetrosyan.wordpress.com/');
+    setTimeout(virus, 200);
+}
+</script>
+</body>
+</html>
